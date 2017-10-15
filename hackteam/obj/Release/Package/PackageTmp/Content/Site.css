@@ -1,0 +1,34 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url('background.jpg');
+    color: white;
+    background-size: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.phone {
+    position: relative;
+    margin-top: 15px;
+}
+
+    .phone .iphone5-screen {
+        left: 4.25%;
+        overflow: none;
+        position: absolute;
+        right: 5.3%;
+        top: 10.1%;
+    }

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <setParameter name="IIS Web Application Name" value="Default Web Site/" />
+  <setParameter name="hackteamEntities-Web.config Connection String" value="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=yastream10.database.windows.net;initial catalog=hackteam;user id=diakov2100;password=25081998mA;MultipleActiveResultSets=True;App=EntityFramework&quot;" />
+</parameters>
