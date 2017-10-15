@@ -231,6 +231,7 @@
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\1.png" />
+    <Content Include="Content\test.jpg" />
     <Content Include="Content\5.png" />
     <Content Include="Content\4.png" />
     <Content Include="Content\bootstrap.css" />

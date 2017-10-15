@@ -1,6 +1,10 @@
 ﻿body {
+    font-family: 'Roboto', sans-serif;
     padding-top: 50px;
     padding-bottom: 20px;
+    background-image: url('test.jpg');
+    color: white;
+    background-size: 100%;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -15,3 +19,16 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.phone {
+    position: relative;
+    margin-top: 15px;
+}
+
+    .phone .iphone5-screen {
+        left: 4.25%;
+        overflow: none;
+        position: absolute;
+        right: 5.3%;
+        top: 10.1%;
+    }

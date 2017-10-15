@@ -17,18 +17,27 @@ namespace hackteam.Controllers
     {
         private hackteamEntities db = new hackteamEntities();
 
-       
+        public class invations : Invations
+        {
+            public Repositry.project project;
+        } 
         // GET: api/Invations/5
         [ResponseType(typeof(Invations))]
         public IHttpActionResult GetInvations(int user)
         {
-            List<Invations> invations = db.Invations.Where(t1=> t1.user_id == user ).Select(t1=> t1).ToList();
+            List<invations> invations = db.Invations.Where(t1 => t1.user_id == user).Select(t1=> new invations() {role=t1.role, project_id=t1.project_id, user_id=t1.user_id}).ToList();
             if (invations == null)
             {
                 return NotFound();
             }
-
-            return Ok(invations);
+            List<invations> result = new List<invations>();
+            foreach (var cur in invations)
+            {
+                invations tec = cur;
+                tec.project = Repositry.project.Find(cur.project_id);
+                result.Add(tec);
+            }
+            return Ok(result);
         }
         [HttpGet]
         public IHttpActionResult InvationsProject(int project)
