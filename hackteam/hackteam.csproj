@@ -240,6 +240,8 @@
     <Content Include="Content\phone-pixel-black_1x.png" />
     <Content Include="Content\3.png" />
     <Content Include="Content\2.png" />
+    <Content Include="Content\test.png" />
+    <Content Include="Content\test1.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
